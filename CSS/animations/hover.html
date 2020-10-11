@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover</title>
+</head>
+
+<body>
+  <style>
+    div {
+      height: 40px;
+      width: 70%;
+      background: black;
+      margin: 50px auto;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    #rect {
+      animation-name: rainbow;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-color: blue;
+        top: 0px;
+
+      }
+
+      25% {
+        background-color: green;
+        top: 50px;
+
+      }
+
+      50% {
+        background-color: red;
+        top: 30px;
+
+      }
+
+      100% {
+        background-color: black;
+        top: 0px;
+      }
+    }
+  </style>
+
+  <div id="rect"></div>
+</body>
+
+</html>
